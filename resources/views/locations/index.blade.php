@@ -81,12 +81,13 @@
         <div class="card-footer bg-white">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    Showing {{ $locations->firstItem() ?? 0 }} to {{ $locations->lastItem() ?? 0 }} of {{ $locations->total() }} entries
+                    Showing {{ $voitures->firstItem() ?? 0 }} to {{ $voitures->lastItem() ?? 0 }} of {{ $voitures->total() }} entries
                 </div>
                 <div>
-                    {{ $locations->links() }}
+                    {{ $voitures->links() }}
                 </div>
             </div>
         </div>
+              
     </div>
 @endsection

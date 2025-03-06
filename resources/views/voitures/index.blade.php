@@ -114,9 +114,14 @@
                     Showing {{ $voitures->firstItem() ?? 0 }} to {{ $voitures->lastItem() ?? 0 }} of {{ $voitures->total() }} entries
                 </div>
                 <div>
-                    {{ $voitures->links('pagination::tailwind') }}
+                    {{-- Custom pagination styling with Bootstrap --}}
+                    <div class="d-flex justify-content-center mt-4">
+                        {{ $voitures->links('pagination::bootstrap-4') }}
+                    </div>
                 </div>
             </div>
         </div>
+        
+        
     </div>
 @endsection
